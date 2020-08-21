@@ -1,0 +1,103 @@
+/* CSS reset 
+   --------- */
+
+html, body, ul, li {
+    padding: 0;
+    margin: 0;
+}
+
+/* CSS règles générales 
+   -------------------- */
+
+html, body {
+    height: 100%;
+}
+
+body {
+    color: #bfbfbf;
+    background: black;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* CSS règles du gabarit de la page 
+   -------------------------------- */
+
+#global {
+    min-height: 95%;
+    width: 70%;
+    margin: auto;
+    text-align: left;
+    padding: 5px 20px;
+    background: #333534;
+}
+
+header ul {
+    padding: 0 0 30px;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header ul li a {
+    line-height: 30px;
+    padding: 5px 30px;
+    background: #999;  
+}
+header ul li:not(.active) a:hover {
+    background-color:steelblue;
+}
+
+.active {
+    background-color:forestgreen;
+    cursor: default;
+}
+
+
+/* CSS partie spécifique de la page 
+   -------------------------------- */
+
+#contenu {
+    margin-bottom : 30px;
+}
+#global>#contenu>form div span {
+    color :red;
+}
+
+.erreur {
+    color: brown;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+
+tr:first-of-type {
+    border-bottom: 1px solid #bbb;
+}
+
+tr {
+    line-height: 30px;
+}
+span{
+    color :red;
+}
+#global  #contenu  ul li a{
+    color :red; 
+}
+  #contenu table tbody tr td ul {
+    list-style: none;
+    list-style-type:none ;
+}
